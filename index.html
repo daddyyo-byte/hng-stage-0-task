@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main-content">
+      <article
+        data-testid="test-profile-card"
+        class="profile-card"
+        aria-label="User profile card"
+      >
+        <header class="profile-header">
+          <figure class="avatar-container">
+            <img
+              src="images/IMG_4059.JPG"
+              alt="Profile picture of Dami Bakare"
+              data-testid="test-user-avatar"
+              class="avatar"
+            />
+          </figure>
+          <div class="profile-info">
+            <h2 data-testid="test-user-name" class="user-name">Dami Bakare</h2>
+            <p data-testid="test-user-bio" class="user-bio">
+              Software developer passionate about creating accessible web
+              experiences. I love working with modern technologies and
+              contributing to open source projects.
+            </p>
+            <time
+              data-testid="test-user-time"
+              class="current-time"
+              datetime=""
+            ></time>
+          </div>
+        </header>
+
+        <nav
+          data-testid="test-user-social-links"
+          class="social-links"
+          aria-label="Social media links"
+        >
+          <a
+            href="https://x.com/temiayod5?s=21&t=C4-JDHrmOPtzvvgmJ4KbRQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-twitter"
+            class="social-link"
+          >
+            Twitter
+          </a>
+          <a
+            href="https://github.com/daddyyo-byte"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-github"
+            class="social-link"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/damilola-bakare-1b02972bb/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-linkedin"
+            class="social-link"
+          >
+            LinkedIn
+          </a>
+        </nav>
+
+        <section class="hobbies-section" aria-label="User hobbies">
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies" class="hobbies-list">
+            <li>Photography</li>
+            <li>Gaming</li>
+            <li>Football</li>
+            <li>Reading</li>
+          </ul>
+        </section>
+
+        <section class="dislikes-section" aria-label="User dislikes">
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes" class="dislikes-list">
+            <li>Traffic jams</li>
+            <li>Cold coffee</li>
+            <li>Spam emails</li>
+            <li>Loud noises</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
